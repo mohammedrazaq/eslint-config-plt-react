@@ -1,0 +1,69 @@
+{
+  "name": "@mohammedrazaq/eslint-config-plt-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammedrazaq/eslint-config-plt-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "prettier": "2.2.1",
+    "@next/eslint-plugin-next": "12.1.1",
+    "@typescript-eslint/eslint-plugin": "5.38.0",
+    "@typescript-eslint/parser": "5.38.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.0.1",
+    "eslint-config-prettier": "6.12.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-jest-dom": "3.6.5",
+    "eslint-plugin-plt-rules": "file:eslint",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.30.0",
+    "eslint-plugin-testing-library": "3.10.1",
+    "eslint-plugin-unused-imports": "1.1.2",
+    "@testing-library/cypress": "7.0.4",
+    "@testing-library/dom": "8.0.0",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "11.0.4",
+    "@testing-library/react-hooks": "5.0.3",
+    "@testing-library/user-event": "12.3.0"
+  },
+  "files": [
+    "index.js",
+    "eslint"
+  ],
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
+  "dependencies": {
+    "@next/eslint-plugin-next": "12.1.1",
+    "@typescript-eslint/eslint-plugin": "5.38.0",
+    "@typescript-eslint/parser": "5.38.0",
+    "eslint-config-next": "11.0.1",
+    "eslint-config-prettier": "6.12.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-jest-dom": "3.6.5",
+    "eslint-plugin-plt-rules": "file:eslint",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.30.0",
+    "eslint-plugin-testing-library": "3.10.1",
+    "eslint-plugin-unused-imports": "1.1.2",
+    "@testing-library/cypress": "7.0.4",
+    "@testing-library/dom": "8.0.0",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "11.0.4",
+    "@testing-library/react-hooks": "5.0.3",
+    "@testing-library/user-event": "12.3.0"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1",
+    "eslint": "7.32.0"
+  }
+}
