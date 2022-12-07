@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ["testing-library", "jest-dom", "unused-imports"],
+  plugins: ["testing-library", "jest-dom", "plt-rules", "unused-imports"],
   extends: [
     "plugin:testing-library/recommended",
     "plugin:jest-dom/recommended",
@@ -14,8 +14,8 @@ module.exports = {
     },
   },
   rules: {
-    "prefer-logical": require("./rules/lib/rules/prefer-logical"),
-    "no-interpolated-classes": require("./rules/lib/rules/no-interpolated-classes"),
+    "plt-rules/prefer-logical": 2,
+    "plt-rules/no-interpolated-classes": 2,
     "prettier/prettier": "warn",
     "@next/next/no-img-element": 0,
     "unused-imports/no-unused-imports": "error",

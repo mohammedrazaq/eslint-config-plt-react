@@ -19,7 +19,7 @@
   "license": "ISC",
   "files": [
     "index.js",
-    "rules"
+    "plugins"
   ],
   "eslintConfig": {
     "extends": "./index.js"
@@ -34,7 +34,7 @@
     "eslint-config-prettier": "6.12.0",
     "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-jest-dom": "3.6.5",
-    "eslint-plugin-plt-rules": "file:rules",
+    "eslint-plugin-plt-rules": "file:plugins",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.30.0",
     "eslint-plugin-testing-library": "3.10.1",
@@ -54,7 +54,7 @@
     "eslint-config-prettier": "6.12.0",
     "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-jest-dom": "3.6.5",
-    "eslint-plugin-plt-rules": "file:rules",
+    "eslint-plugin-plt-rules": "file:plugins",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.30.0",
     "eslint-plugin-testing-library": "3.10.1",
