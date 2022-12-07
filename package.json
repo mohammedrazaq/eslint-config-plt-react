@@ -1,10 +1,11 @@
 {
   "name": "@mohammedrazaq/eslint-config-plt-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "npm publish",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "files": [
+    "index.js",
+    "eslint"
+  ],
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
   "peerDependencies": {
     "prettier": "2.2.1",
     "@next/eslint-plugin-next": "12.1.1",
@@ -23,7 +31,7 @@
     "eslint-config-prettier": "6.12.0",
     "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-jest-dom": "3.6.5",
-    "eslint-plugin-plt-rules": "file:eslint",
+    "eslint-plugin-plt-rules": "file:rules",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.30.0",
     "eslint-plugin-testing-library": "3.10.1",
@@ -35,13 +43,6 @@
     "@testing-library/react-hooks": "5.0.3",
     "@testing-library/user-event": "12.3.0"
   },
-  "files": [
-    "index.js",
-    "eslint"
-  ],
-  "eslintConfig": {
-    "extends": "./index.js"
-  },
   "dependencies": {
     "@next/eslint-plugin-next": "12.1.1",
     "@typescript-eslint/eslint-plugin": "5.38.0",
@@ -50,7 +51,7 @@
     "eslint-config-prettier": "6.12.0",
     "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-jest-dom": "3.6.5",
-    "eslint-plugin-plt-rules": "file:eslint",
+    "eslint-plugin-plt-rules": "file:rules",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.30.0",
     "eslint-plugin-testing-library": "3.10.1",
@@ -64,6 +65,7 @@
   },
   "devDependencies": {
     "prettier": "2.2.1",
-    "eslint": "7.32.0"
+    "eslint": "7.32.0",
+    "jest": "26.6.3"
   }
 }

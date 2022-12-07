@@ -1,5 +1,5 @@
-const RuleTester = require('eslint').RuleTester;
-const rule = require('../../../lib/rules/prefer-logical');
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/prefer-logical");
 
 const ruleTester = new RuleTester();
 
@@ -7,32 +7,32 @@ const common = {
   parserOptions: {
     ecmaVersion: 2020,
     ecmaFeatures: { jsx: true },
-    sourceType: 'module'
-  }
+    sourceType: "module",
+  },
 };
 
-ruleTester.run('my-rule', rule, {
+ruleTester.run("prefer-logical-rule", rule, {
   valid: [
     {
       code:
         'export default function() { return <MyComponent className="foo" />; }',
-      ...common
+      ...common,
     },
     {
       code:
         'export default function() { return <MyComponent className="foo bar" />; }',
-      ...common
+      ...common,
     },
     {
       code:
-        'export default function() { return <MyComponent className={`foo bar`} />; }',
-      ...common
+        "export default function() { return <MyComponent className={`foo bar`} />; }",
+      ...common,
     },
     {
       code:
         'export default function() { return <MyComponent className={classnames("foo bar", { baz: true })} />; }',
-      ...common
-    }
+      ...common,
+    },
   ],
 
   invalid: [
@@ -42,21 +42,21 @@ ruleTester.run('my-rule', rule, {
       errors: [
         {
           message:
-            '`ml-1` is not RTL friendly, consider replacing it with `mis-1`'
-        }
+            "`ml-1` is not RTL friendly, consider replacing it with `mis-1`",
+        },
       ],
-      ...common
+      ...common,
     },
     {
       code:
-        'export default function() { return <MyComponent className={`ml-1`} />; }',
+        "export default function() { return <MyComponent className={`ml-1`} />; }",
       errors: [
         {
           message:
-            '`ml-1` is not RTL friendly, consider replacing it with `mis-1`'
-        }
+            "`ml-1` is not RTL friendly, consider replacing it with `mis-1`",
+        },
       ],
-      ...common
+      ...common,
     },
     {
       code:
@@ -64,10 +64,10 @@ ruleTester.run('my-rule', rule, {
       errors: [
         {
           message:
-            '`ml-1` is not RTL friendly, consider replacing it with `mis-1`'
-        }
+            "`ml-1` is not RTL friendly, consider replacing it with `mis-1`",
+        },
       ],
-      ...common
+      ...common,
     },
     {
       code:
@@ -75,10 +75,10 @@ ruleTester.run('my-rule', rule, {
       errors: [
         {
           message:
-            '`sm:ml-1` is not RTL friendly, consider replacing it with `sm:mis-1`'
-        }
+            "`sm:ml-1` is not RTL friendly, consider replacing it with `sm:mis-1`",
+        },
       ],
-      ...common
+      ...common,
     },
     {
       code:
@@ -86,10 +86,10 @@ ruleTester.run('my-rule', rule, {
       errors: [
         {
           message:
-            '`md:ml-1` is not RTL friendly, consider replacing it with `md:mis-1`'
-        }
+            "`md:ml-1` is not RTL friendly, consider replacing it with `md:mis-1`",
+        },
       ],
-      ...common
+      ...common,
     },
     {
       code:
@@ -97,10 +97,10 @@ ruleTester.run('my-rule', rule, {
       errors: [
         {
           message:
-            '`xl:ml-1` is not RTL friendly, consider replacing it with `xl:mis-1`'
-        }
+            "`xl:ml-1` is not RTL friendly, consider replacing it with `xl:mis-1`",
+        },
       ],
-      ...common
+      ...common,
     },
     {
       code:
@@ -108,10 +108,10 @@ ruleTester.run('my-rule', rule, {
       errors: [
         {
           message:
-            '`-ml-1` is not RTL friendly, consider replacing it with `-mis-1`'
-        }
+            "`-ml-1` is not RTL friendly, consider replacing it with `-mis-1`",
+        },
       ],
-      ...common
-    }
-  ]
+      ...common,
+    },
+  ],
 });
