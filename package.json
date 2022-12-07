@@ -19,7 +19,7 @@
   "license": "ISC",
   "files": [
     "index.js",
-    "eslint"
+    "rules"
   ],
   "eslintConfig": {
     "extends": "./index.js"
