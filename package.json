@@ -18,7 +18,8 @@
   "author": "",
   "license": "ISC",
   "files": [
-    "index.js"
+    "index.js",
+    "plugin"
   ],
   "eslintConfig": {
     "extends": "./index.js"
